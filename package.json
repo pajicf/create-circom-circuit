@@ -1,0 +1,15 @@
+{
+  "name": "sudoku-circom",
+  "version": "1.0.0",
+  "description": "Template Circuit Project written in Circom",
+  "main": "index.js",
+  "scripts": {
+    "compile": "bash ./scripts/compile.sh multiplier2",
+    "generate:witness": "bash ./scripts/witness.sh multiplier2"
+  },
+  "author": "Filip Pajić",
+  "license": "MIT",
+  "dependencies": {
+    "circom": "^0.5.46"
+  }
+}
