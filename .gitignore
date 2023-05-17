@@ -2,3 +2,5 @@
 *.sym
 */*_cpp/*
 */*_js/*
+
+build/witness/*.wtns
