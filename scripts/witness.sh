@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CIRCUIT_NAME=
+CIRCUIT_NAME=""
 if [ "$1" ]; then
     CIRCUIT_NAME=$1
 else
