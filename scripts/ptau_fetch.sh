@@ -12,6 +12,7 @@ PTAU_URL=https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_${PTA
 PTAU_OUT_FILE=powers_of_tau_${PTAU_POWER}.ptau
 PTAU_OUT_FILE_PATH=./build/ptau/${PTAU_OUT_FILE}
 
+# Generates /build/ptau/PTAU_OUT_FILE
 if [ -f ${PTAU_OUT_FILE_PATH} ]; then
   echo "${PTAU_OUT_FILE} download already Completed!"
   exit 0

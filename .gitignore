@@ -5,3 +5,5 @@
 
 build/witness/*.wtns
 build/ptau/*.ptau
+
+build/keys/*
