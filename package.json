@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "bash ./scripts/compile.sh multiplier2",
     "ptau:fetch": "bash ./scripts/ptau_fetch.sh 14",
-    "generate:witness": "bash ./scripts/witness.sh multiplier2"
+    "witness:generate": "bash ./scripts/witness.sh multiplier2"
   },
   "author": "Filip Pajić",
   "license": "MIT",

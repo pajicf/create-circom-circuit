@@ -1,7 +1,7 @@
 *.r1cs
 *.sym
-*/*_cpp/*
-*/*_js/*
+*/binaries/*_cpp/*
+*/binaries/*_js/*
 
 build/witness/*.wtns
 build/ptau/*.ptau

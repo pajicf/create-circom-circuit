@@ -8,4 +8,4 @@ else
   exit 1
 fi
 
-circom ./circuits/${CIRCUIT_NAME}.circom --r1cs --wasm --sym -o build
+circom ./circuits/${CIRCUIT_NAME}.circom --r1cs --wasm --sym -o build/binaries
