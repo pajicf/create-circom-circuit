@@ -15,5 +15,5 @@ if [ ${PROOF_FOLDER_PATH} ]; then
   mkdir -p ${PROOF_FOLDER_PATH}
 fi
 
-echo "Generating proof for ${./build/proof/${CIRCUIT_NAME}/}"
+echo "Generating proof for ${CIRCUIT_NAME} circuit"
 snarkjs groth16 prove ./build/keys/${CIRCUIT_NAME}_final.zkey ./build/witness/${CIRCUIT_NAME}.wtns ${PROOF_FOLDER_PATH}/proof.json ${PROOF_FOLDER_PATH}/public.json
