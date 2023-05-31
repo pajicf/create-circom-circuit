@@ -4,7 +4,7 @@ CIRCUIT_NAME=""
 if [ "$1" ]; then
     CIRCUIT_NAME=$1
 else
-  echo "Please provide name of the circuit to compile"
+  echo "Please provide circuit name"
   exit 1
 fi
 
