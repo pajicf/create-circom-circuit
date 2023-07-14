@@ -8,3 +8,7 @@ build/ptau/*.ptau
 build/proof/*/*.json
 
 build/keys/*
+
+node_modules
+.idea
+.vscode

@@ -4,16 +4,23 @@
   "description": "Template Circuit Project written in Circom",
   "main": "index.js",
   "scripts": {
-    "compile": "bash ./scripts/compile.sh multiplier2",
+    "compile": "bash ./scripts/compile.sh main",
     "ptau:fetch": "bash ./scripts/ptau_fetch.sh 14",
-    "ptau:phase2": "bash ./scripts/ptau_phase2.sh build/ptau/powers_of_tau_14.ptau multiplier2",
-    "witness:generate": "bash ./scripts/witness.sh multiplier2",
-    "proof:generate": "bash ./scripts/proof_generate.sh multiplier2",
-    "build": "yarn compile && yarn ptau:fetch && yarn ptau:phase2 && yarn witness:generate && yarn proof:generate"
+    "ptau:phase2": "bash ./scripts/ptau_phase2.sh build/ptau/powers_of_tau_14.ptau main",
+    "witness:generate": "bash ./scripts/witness.sh main",
+    "proof:generate": "bash ./scripts/proof_generate.sh main",
+    "build": "yarn compile && yarn ptau:fetch && yarn ptau:phase2 && yarn witness:generate && yarn proof:generate",
+    "test": "mocha --project tsconfig.json"
   },
   "author": "Filip Pajić",
   "license": "MIT",
   "dependencies": {
-    "circom": "^0.5.46"
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "circom_tester": "^0.0.19",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }
