@@ -9,6 +9,8 @@ build/proof/*/*.json
 
 build/keys/*
 
+build
+
 node_modules
 .idea
 .vscode
