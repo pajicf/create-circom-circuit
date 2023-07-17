@@ -1,0 +1,6 @@
+BINARIES_FOLDER_PATH=./build/binaries
+PROOFS_FOLDER_PATH=./build/proof
+KEYS_FOLDER_PATH=./build/keys
+WITNESS_FOLDER_PATH=./build/witness
+PTAU_FOLDER_PATH=./build/ptau
+INPUTS_FOLDER_PATH=./inputs

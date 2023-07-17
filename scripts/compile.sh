@@ -1,4 +1,5 @@
 #!/bin/bash
+. ./scripts/build_constants
 
 CIRCUIT_NAME=""
 if [ "$1" ]; then
@@ -12,4 +13,5 @@ fi
 # - build/binaries/CIRCUIT_NAME_js binaries
 # - build/binaries/CIRCUIT_NAME.r1cs
 # - build/binaries/CIRCUIT_NAME.sym
-circom ./circuits/${CIRCUIT_NAME}.circom --r1cs --wasm --sym -o build/binaries
+mkdir -p ${BINARIES_FOLDER_PATH}
+circom ./circuits/${CIRCUIT_NAME}.circom --r1cs --wasm --sym -o ${BINARIES_FOLDER_PATH}

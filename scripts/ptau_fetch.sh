@@ -1,4 +1,5 @@
 #!/bin/bash
+. ./scripts/build_constants
 
 PTAU_POWER=""
 if [ "$1" ]; then
@@ -9,8 +10,12 @@ else
 fi
 
 PTAU_URL=https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_${PTAU_POWER}.ptau
+
 PTAU_OUT_FILE=powers_of_tau_${PTAU_POWER}.ptau
-PTAU_OUT_FILE_PATH=./build/ptau/${PTAU_OUT_FILE}
+
+PTAU_OUT_FILE_PATH=${PTAU_FOLDER_PATH}/${PTAU_OUT_FILE}
+
+mkdir -p ${PTAU_FOLDER_PATH}
 
 # Generates /build/ptau/PTAU_OUT_FILE
 if [ -f ${PTAU_OUT_FILE_PATH} ]; then

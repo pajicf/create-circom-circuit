@@ -1,4 +1,5 @@
 #!/bin/bash
+. ./scripts/build_constants
 
 CIRCUIT_NAME=""
 if [ "$1" ]; then
@@ -8,12 +9,12 @@ else
   exit 1
 fi
 
-PROOF_FOLDER_PATH=./build/proof/${CIRCUIT_NAME}
+PROOF_FOLDER_PATH=${PROOFS_FOLDER_PATH}/${CIRCUIT_NAME}
 
-if [ ${PROOF_FOLDER_PATH} ]; then
-  echo "test"
-  mkdir -p ${PROOF_FOLDER_PATH}
-fi
+# Creating directories
+mkdir -p ${PROOF_FOLDER_PATH}
+mkdir -p ${KEYS_FOLDER_PATH}
+mkdir -p ${WITNESS_FOLDER_PATH}
 
 echo "Generating proof for ${CIRCUIT_NAME} circuit"
-snarkjs groth16 prove ./build/keys/${CIRCUIT_NAME}_final.zkey ./build/witness/${CIRCUIT_NAME}.wtns ${PROOF_FOLDER_PATH}/proof.json ${PROOF_FOLDER_PATH}/public.json
+snarkjs groth16 prove ${KEYS_FOLDER_PATH}/${CIRCUIT_NAME}_final.zkey ${WITNESS_FOLDER_PATH}/${CIRCUIT_NAME}.wtns ${PROOF_FOLDER_PATH}/proof.json ${PROOF_FOLDER_PATH}/public.json
