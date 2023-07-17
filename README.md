@@ -25,6 +25,7 @@ Before running any command, first:
 3. `yarn build` - **The Easy Build flow** (Compiles, fetches trusted ceremony and creates a ZKP proof for the project)
 
 ### Command list
+
 For more control, the build command is broken down into several atomic components, where each can be ran by an individual command
 
 | Command | Description |
@@ -39,4 +40,4 @@ For more control, the build command is broken down into several atomic component
 
 Tests are written in Typescript and done using the Mocha framework.
 
-Tu run the tests, use `yarn test` 
+To run the tests, use `yarn test`
