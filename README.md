@@ -1,6 +1,6 @@
 <img align="left" width="150" height="150" top="100" src="https://ipfs.io/ipfs/QmQCD5LZcxBky4rxNriBNx36cACdwxeMtyEets3Au8cV4Q">
 
-# [Circom] create-circuit-template
+# [Circom Project Template]
 
 Light and Easy to use template for **Circom** projects with the **_"easy build flow"_**
 
