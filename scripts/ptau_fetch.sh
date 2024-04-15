@@ -9,7 +9,7 @@ else
   exit 1
 fi
 
-PTAU_URL=https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_${PTAU_POWER}.ptau
+PTAU_URL=https://storage.googleapis.com/zkevm/ptau/powersOfTau28_hez_final_${PTAU_POWER}.ptau
 
 PTAU_OUT_FILE=powers_of_tau_${PTAU_POWER}.ptau
 
